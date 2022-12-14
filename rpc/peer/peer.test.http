@@ -1,0 +1,32 @@
+### Get keybundle by address
+POST {{RPC_URL}}
+Accept: application/json
+Content-Type: application/json
+
+{
+   "jsonrpc": "1.0",
+   "id": 1,
+   "method": "peer.GetKeyBundle",
+   "params": [
+      {
+         "address": "xv0cVRzu71R-_hGhuoNIWHqvsazvq8g0PvQkjQ"
+      }
+   ]
+}
+
+### Derive address from auth and exchange key
+POST {{RPC_URL}}
+Accept: application/json
+Content-Type: application/json
+
+{
+   "jsonrpc": "1.0",
+   "id": 2,
+   "method": "peer.DeriveAddress",
+   "params": [
+      {
+         "authKey": "BMXsi9rYj-d76uKaohyuU3zg8AZUlczs6tZt99b08ggGLgw6al0jn7zR-T8znbdnI-3vlZN6Cpt7MBJnes6iH68",
+         "exchangeKey": "BM9GxINhc0Q-0LVVndjo_dnE5hYzGtPiYy6nYYPlVKnEzmu4tR_lzZqguq1nzFCtVf1JaAfaRLB86TPZEyBbvOa4KVJm9xOOPqhmssY7rti1OhDMEePj-QcvA0NW8wxDeg"
+      }
+   ]
+}

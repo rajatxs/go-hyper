@@ -1,0 +1,3 @@
+### Simple ping request
+GET {{BASE_URL}}/ping
+Accept: text/plain
